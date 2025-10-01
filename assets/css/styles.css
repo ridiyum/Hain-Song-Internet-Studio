@@ -105,7 +105,9 @@ h2 {
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	margin-bottom: 15px;
-	height: 250px;
+	max-height: 400px;
+	width: auto;
+	margin: 0 auto;
 }
 
 .caption {
