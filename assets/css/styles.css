@@ -37,11 +37,12 @@ header {
 }
 
 h1{
-	font-family: "Dosis", sans-serif;
+	font-family: "Audiowide", sans-serif;
+  	font-weight: 400;
+	font-style: normal;
 	font-optical-sizing: auto;
-  	font-weight: 500;
-  	font-style: normal;
 	margin-bottom:10px;
+	font-size: 3.5rem
 }
 
 
