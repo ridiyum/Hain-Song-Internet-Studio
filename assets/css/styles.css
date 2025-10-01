@@ -27,6 +27,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+	flex: 1;
 }
 
 header {
@@ -164,7 +165,7 @@ footer {
     padding: 20px;
     color: #4a9e9e;
     font-size: 0.9rem;
-    margin-top: 20px;
+    margin-top: auto;
     background-color: transparent;
     border-radius: 0;
 }
