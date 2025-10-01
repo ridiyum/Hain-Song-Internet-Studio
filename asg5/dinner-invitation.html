@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Invitation | Special Guests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dosis:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to the dinner invitation page */
+        .dinner-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .dinner-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dinner-title {
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-optical-sizing: auto;
+            margin-bottom: 10px;
+            font-size: 3rem;
+            color: #2a7a7a;
+        }
+        
+        .guests-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .guest-card {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .guest-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .guest-name {
+            font-family: "Audiowide", sans-serif;
+            color: #2a7a7a;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid PaleTurquoise;
+            padding-bottom: 8px;
+        }
+        
+        .menu-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .menu-title {
+            font-family: "Audiowide", sans-serif;
+            color: #2a7a7a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid PaleTurquoise;
+            padding-bottom: 8px;
+        }
+        
+        .menu-list {
+            list-style-type: none;
+        }
+        
+        .menu-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #b3e0e0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu-list li:before {
+            content: "•";
+            color: PaleTurquoise;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .rsvp-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .rsvp-title {
+            font-family: "Audiowide", sans-serif;
+            color: #2a7a7a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid PaleTurquoise;
+            padding-bottom: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2a7a7a;
+        }
+        
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b3e0e0;
+            border-radius: 5px;
+            font-family: 'Dosis', sans-serif;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+        
+        .radio-option input {
+            margin-right: 5px;
+        }
+        
+        .submit-btn {
+            background-color: PaleTurquoise;
+            color: #2a7a7a;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-family: 'Audiowide', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #2a7a7a;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .dinner-title {
+                font-size: 2.2rem;
+            }
+            
+            .guest-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dinner-container">
+        <header class="dinner-header">
+            <h1 class="dinner-title">An Extraordinary Dinner Invitation</h1>
+            <p class="tagline">Join me for an unforgettable evening with three remarkable guests</p>
+        </header>
+
+        <section class="guests-section">
+            <div class="guest-card">
+                <img src="https://images.unsplash.com/photo-1587590227261-2e0ccadfafcf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Frida Kahlo" class="guest-image">
+                <h2 class="guest-name">Frida Kahlo</h2>
+                <p>Frida Kahlo was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Her work was influenced by indigenous Mexican culture and European artistic traditions.</p>
+                <p>I would love to have Frida over because her resilience in the face of physical and emotional pain is incredibly inspiring. I'm fascinated by her unique perspective on life, art, and identity, and I'd love to discuss how she transformed suffering into beautiful, meaningful art.</p>
+            </div>
+            
+            <div class="guest-card">
+                <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Leonardo da Vinci" class="guest-image">
+                <h2 class="guest-name">Leonardo da Vinci</h2>
+                <p>Leonardo da Vinci was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect.</p>
+                <p>Having Leonardo at my dinner table would be a dream come true. His unparalleled curiosity and ability to excel in both arts and sciences is something I deeply admire. I'd love to ask him about his creative process and how he managed to bridge the worlds of art and science so seamlessly.</p>
+            </div>
+            
+            <div class="guest-card">
+                <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Michelle Obama" class="guest-image">
+                <h2 class="guest-name">Michelle Obama</h2>
+                <p>Michelle Obama is an American attorney and author who served as the first lady of the United States from 2009 to 2017. She is a graduate of Princeton University and Harvard Law School.</p>
+                <p>I admire Michelle Obama for her grace, intelligence, and commitment to important social causes. Her initiatives on education, health, and poverty have made a real difference. I'd love to hear her perspectives on leadership, public service, and balancing family life with public responsibilities.</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="menu-title">Evening Menu</h2>
+            <ul class="menu-list">
+                <li><strong>Appetizers:</strong> Bruschetta with heirloom tomatoes, smoked salmon crostini, and stuffed mushrooms</li>
+                <li><strong>Main Course:</strong> Herb-crusted rack of lamb with roasted vegetables and truffle mashed potatoes</li>
+                <li><strong>Dessert:</strong> Dark chocolate fondue with fresh fruits and homemade churros</li>
+                <li><strong>Beverages:</strong> Selection of fine wines, craft cocktails, and non-alcoholic artisanal drinks</li>
+            </ul>
+        </section>
+
+        <section class="rsvp-section">
+            <h2 class="rsvp-title">RSVP</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Will you be bringing a guest?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="yes" name="guest" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no" name="guest" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dietary">Dietary Preferences/Restrictions</label>
+                    <textarea id="dietary" name="dietary" rows="4" placeholder="Please list any dietary preferences or restrictions..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit RSVP</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your RSVP! We look forward to seeing you at the dinner.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
