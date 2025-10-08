@@ -23,3 +23,231 @@
        
 
  Insert all your glorious CSS styles below! */
+ 
+html {
+    background-image: url('images/moroccan-flower-dark.png'); /* Updated background pattern */
+    background-repeat: repeat;
+    font-size: 16px; /* Base font size */
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Body font */
+    line-height: 1.8; /* Increased line spacing for readability */
+    color: #2C3E50; /* Deep blue for body text */
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(236, 240, 241, 0.9); /* Soft gray with transparency */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.container {
+    padding: 40px;
+}
+
+/* Heading styles */
+h1 {
+    font-family: 'Merriweather', serif; /* Heading font */
+    font-size: 3em; /* 48px equivalent */
+    color: #2C3E50; /* Deep blue */
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #E67E22; /* Warm orange accent */
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em; /* 32px equivalent */
+    color: #34495E; /* Charcoal */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em; /* 24px equivalent */
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.125em; /* 18px equivalent */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Section spacing */
+.hat-section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Hat header with icon */
+.hat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.hat-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+/* Individual hat color coding */
+.blue-hat {
+    background-color: #2C3E50; /* Deep blue */
+    color: #FFFFFF;
+}
+
+.hat-header .hat-icon[alt="Blue Hat"] {
+    border-color: #2C3E50;
+}
+
+.white-hat {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border: 2px solid #ECF0F1;
+}
+
+.hat-header .hat-icon[alt="White Hat"] {
+    border-color: #ECF0F1;
+}
+
+.red-hat {
+    background-color: #C0392B; /* Dark red */
+    color: #FFFFFF;
+}
+
+.hat-header .hat-icon[alt="Red Hat"] {
+    border-color: #C0392B;
+}
+
+.yellow-hat {
+    background-color: #F1C40F; /* Bright yellow */
+    color: #2C3E50;
+}
+
+.hat-header .hat-icon[alt="Yellow Hat"] {
+    border-color: #F1C40F;
+}
+
+.black-hat {
+    background-color: #34495E; /* Charcoal */
+    color: #FFFFFF;
+}
+
+.hat-header .hat-icon[alt="Black Hat"] {
+    border-color: #34495E;
+}
+
+.green-hat {
+    background-color: #27AE60; /* Forest green */
+    color: #FFFFFF;
+}
+
+.hat-header .hat-icon[alt="Green Hat"] {
+    border-color: #27AE60;
+}
+
+/* Summary section styles */
+.summary-section {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.summary-section h2 {
+    color: #2C3E50;
+    text-align: left;
+    border-bottom: 2px solid #E67E22;
+    padding-bottom: 10px;
+}
+
+.summary-content {
+    overflow: hidden; /* Clear float */
+}
+
+/* Dominant hat image styling */
+.dominant-hat {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    border: 4px solid #2C3E50; /* Blue border to represent dominant Blue Hat */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em; /* Smaller on mobile */
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.25em;
+    }
+    
+    .hat-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hat-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .dominant-hat {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hat-section {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.75em;
+    }
+    
+    h2 {
+        font-size: 1.25em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+}
