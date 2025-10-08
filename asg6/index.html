@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Thinking Hats Analysis - Study Haven Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Six Thinking Hats Analysis</h1>
+            <h2>Study Haven Project Scope Refinement</h2>
+        </header>
+
+        <main>
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/bluehat.jpg" alt="Blue Hat" class="hat-icon">
+                    <h3 class="blue-hat">Blue Hat (Process Control)</h3>
+                </div>
+                <p>I explained the Six Hats method to my partner, a fellow student who understands the constraints of a class project. Wearing the Blue Hat, I set the goal: to critically evaluate the "Study Haven" concept as a manageable, one-person website built within a single semester. We agreed to focus on what is feasible for a solo developer with limited time and budget, and to prioritize the core features that deliver the most value without being overly complex.</p>
+            </section>
+
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/whitehat.jpg" alt="White Hat" class="hat-icon">
+                    <h3 class="white-hat">White Hat (Facts & Information)</h3>
+                </div>
+                <p>Under the White Hat, we looked at the facts. The core idea is a static website with a database of study spots. The key facts are that I, as a single developer, have the skills to build this using basic web development tools (HTML, CSS, JavaScript) and can host it for free on a platform like GitHub Pages or Netlify. The major information gap is how to populate the database. We concluded that manually researching and entering 20-30 locations around my own campus is the only realistic path. The "real-time crowding" and "user-submitted photos/reviews" are not feasible for this scope, as they require complex back-end systems, user authentication, and constant moderation.</p>
+            </section>
+
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/redhat.jpg" alt="Red Hat" class="hat-icon">
+                    <h3 class="red-hat">Red Hat (Emotions & Intuition)</h3>
+                </div>
+                <p>With the Red Hat on, my partner shared their gut feelings. They loved the core idea, saying, "This is such a useful tool, and it feels totally achievable." They were excited by the potential to actually use it themselves next semester. However, they expressed a immediate worry about the project becoming a "time sink," especially if I tried to build too many features. My own feeling was enthusiasm for solving a real problem, but also nervousness about the data entry being tedious and the site looking too simple or static.</p>
+            </section>
+
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/yellowhat.jpg" alt="Yellow Hat" class="hat-icon">
+                    <h3 class="yellow-hat">Yellow Hat (Logical Positive)</h3>
+                </div>
+                <p>Thinking with the Yellow Hat, we focused on why a simplified version would work brilliantly. The primary value isn't in real-time data; it's in the curated filters. A simple, fast-loading site that reliably tells a student where to find a quiet coffee shop with good Wi-Fi and outlets is incredibly valuable. We agreed that even a static list, beautifully organized and easy to search, would be a huge success for a class project and genuinely helpful for users. Its success would be measured by its usability and clarity, not by complex community features.</p>
+            </section>
+
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/blackhat.jpg" alt="Black Hat" class="hat-icon">
+                    <h3 class="black-hat">Black Hat (Judgment & Caution)</h3>
+                </div>
+                <p>Putting on the Black Hat, we identified the biggest risks for a solo developer. The main pitfall is scope creep—trying to build the "perfect" version with user accounts and live updates, which would guarantee the project wouldn't get finished. Secondly, manually maintained data can become outdated quickly (e.g., a coffee shop closes or changes its Wi-Fi password), which could frustrate users. Finally, without a backend, any "filtering" would have to be done client-side, which might be slow if the list of locations gets very long.</p>
+            </section>
+
+            <section class="hat-section">
+                <div class="hat-header">
+                    <img src="images/greenhat.jpg" alt="Green Hat" class="hat-icon">
+                    <h3 class="green-hat">Green Hat (Creativity & Alternatives)</h3>
+                </div>
+                <p>The Green Hat session was about finding clever, simple solutions. To avoid scope creep, we decided the site should be a curated guide, not a dynamic platform. Instead of user reviews, I could include a brief, static "Pro-Tip" for each location that I write myself. To handle filtering without a complex database, I can use a simple JavaScript library to filter HTML elements on the page. To address data staleness, I can add a clear disclaimer: "This is a student project. Information was verified on [Date]. Please call ahead to confirm." This manages user expectations realistically.</p>
+            </section>
+
+            <section class="summary-section">
+                <h2>How My Project Has Changed as a Result of This Discussion</h2>
+                <div class="summary-content">
+                    <img src="images/bluehat.jpg" alt="Blue Hat representing process control thinking style" class="dominant-hat">
+                    <p>This conversation was a crucial reality check that has dramatically simplified and improved my project plan. I am completely re-scoping "Study Haven" from a dynamic platform to a statically generated, curated guide. I will remove all specifications for user accounts, real-time updates, and crowd-sourced reviews. The new core functionality is a single page with a list of 20-30 hand-picked locations around my campus. I will implement simple client-side filtering (for noise level, outlets, etc.) using JavaScript. Each location will have the essential details I can reliably research (Wi-Fi, hours, outlet availability), along with a photo I take myself and a short, written "Pro-Tip." By embracing these limitations, I can create a polished, useful, and fully functional website within the semester that demonstrates core web development skills and solves the original problem in a practical, achievable way.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
