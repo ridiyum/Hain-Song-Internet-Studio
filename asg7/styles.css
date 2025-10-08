@@ -49,3 +49,13 @@ h1, h2, h3 {
 p, ul {
   font-family: 'Albert Sans';
 }
+
+
+h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+	font-style: normal;
+	font-optical-sizing: auto;
+	margin-bottom: 10px;
+	font-size: 3.5rem
+}
