@@ -147,7 +147,8 @@ p, ul {
   color: #4a9e9e;
   text-decoration: none;
   font-weight: 500;
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin: 15px 0;
 }
 
@@ -156,12 +157,10 @@ p, ul {
 }
 
 .section2 {
-  background-color: rgba(225, 255, 255, 0.85);
   border-left: 4px solid PaleTurquoise;
 }
 
 .section3 {
-  background-color: rgba(225, 225, 225, 0.85);
   border: 2px solid PaleTurquoise;
 }
 
