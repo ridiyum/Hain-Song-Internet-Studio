@@ -87,6 +87,10 @@ body {
   padding: 20px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 h1 {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
