@@ -60,7 +60,7 @@ body {
   background-color: LightCyan; /* Fallback color */
   color: #333; /* Main text color */
   /* Background image covering entire page */
-  background-image: url('brick.jpg'); /*background image path */
+  background-image: url('images/brick.jpg'); /*background image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
