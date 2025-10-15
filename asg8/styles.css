@@ -25,33 +25,39 @@
  Insert all your glorious CSS styles below! */
 /* amethysta-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Amethysta';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/amethysta-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/amethysta-v17-latin-regular.woff2') format('woff2');
 }
 
 /* almendra-display-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Almendra Display';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/almendra-display-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/almendra-display-v33-latin-regular.woff2') format('woff2');
 }
 
-
-html {font-size: 16px;}
+html {
+  font-size: 16px;
+}
 
 body {
   font-family: 'Amethysta', sans-serif;
-  font-weight: false;
+  font-weight: 400;
   line-height: 1.65;
+  background-color: #FAF7F2;
+  color: #1D2A4A;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
 h1,
@@ -60,8 +66,9 @@ h3,
 h4,
 h5 {
   font-family: 'Almendra Display', sans-serif;
-  font-weight: true;
+  font-weight: 400;
   line-height: 1.15;
+  color: #1D2A4A;
 }
 
 h1,
@@ -84,11 +91,72 @@ h4,
 h5,
 .text-size-h5 { font-size: 1.25em; }
 
-.text-caption { font-size: 0.8em; }
+.text-caption { 
+  font-size: 0.8em;
+  color: ;
+}
 
 small,
 .text-small {
   font-size: 0.64em;
 }
-              
 
+/* Links */
+a {
+  color: EF709D;
+  text-decoration: none;
+}
+
+
+/* Layout */
+.page-header {
+  background-color: #62F2FF;
+  color: #1D2A4A;
+  padding: 2em;
+  text-align: center;
+}
+
+.page-header h1 {
+  color: #1D2A4A;
+  margin: 0;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #E8DFD1;
+  border-radius: 8px;
+}
+
+/* Domain List */
+.domain-list {
+  list-style: none;
+  padding: 0;
+}
+
+.domain-item {
+  background-color: #FAF7F2;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-left: 4px solid #EF709D;
+  font-size: 1.1em;
+}
+
+.domain-item.highlight {
+  background-color: #B8F9FF;
+  color: #1D2A4A;
+  border-left: 4px solid #2D4680;
+  font-weight: bold;
+}
+
+.chosen-domain {
+  color: #E2EF70;
+  font-weight: bold;
+}
