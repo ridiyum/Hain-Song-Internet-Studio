@@ -145,14 +145,14 @@ a {
   background-color: #FAF7F2;
   padding: 1em;
   margin-bottom: 0.5em;
-  border-left: 4px solid #EF709D;
+  border-left: 4px solid #2D4680;
   font-size: 1.1em;
 }
 
 .domain-item.highlight {
-  background-color: #B8F9FF;
+  background-color: #FAF7F2;
   color: #1D2A4A;
-  border-left: 4px solid #2D4680;
+  border-left: 4px solid #EF709D;
   font-weight: bold;
 }
 
