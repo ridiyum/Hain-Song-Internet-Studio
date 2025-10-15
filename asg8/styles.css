@@ -101,7 +101,7 @@ small,
   font-size: 0.64em;
 }
 
-/* Chosen Domain */
+/* Link */
 a {
   color: #FF4083;
   text-decoration: none;
@@ -157,6 +157,6 @@ a {
 }
 
 .chosen-domain {
-  color: #E2EF70;
+  color: #FF4083;
   font-weight: bold;
 }
