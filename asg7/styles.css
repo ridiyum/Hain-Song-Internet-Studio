@@ -54,20 +54,22 @@ html, body {
   height: 100%;
 }
 
-
-  /* Body styles with brick background image covering entire page */
+/* Body styles with background image covering entire page */
 body {
-  /* Brick background image covering entire page */
-  background-image: url('brick.jpg');
-  background-size: cover; /* Ensures image covers entire background */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Fixed background while scrolling */
-  background-repeat: no-repeat; /* Prevents tiling */
-}
-/* Section container styles - made more opaque for better readability on brick */
-.section1, .section2, .section3 {
-  background-color: rgba(255, 255, 255, 0.95); /* More opaque white */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for better contrast */
+  font-family: 'Albert Sans', sans-serif; /* Body font */
+  background-color: LightCyan; /* Fallback color */
+  color: #333; /* Main text color */
+  /* Background image covering entire page */
+  background-image: url('brick.jpg'); /*background image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 1.6; /* Modified leading for paragraph text */
 }
 
 /* Link styles */
