@@ -93,7 +93,7 @@ h5,
 
 .text-caption { 
   font-size: 0.8em;
-  color: ;
+  color: #1D2A4A;
 }
 
 small,
@@ -103,7 +103,7 @@ small,
 
 /* Links */
 a {
-  color: EF709D;
+  color: #EF709D;
   text-decoration: none;
 }
 
