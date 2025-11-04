@@ -23,17 +23,256 @@
        
 
  Insert all your glorious CSS styles below! */
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
- nav ul {
+/* CSS Variables for Bahamas color palette */
+:root {
+  --bahamas-aqua: #00A0B0;
+  --bahamas-yellow: #FFC72C;
+  --bahamas-black: #000000;
+  --bahamas-blue: #00778B;
+  --white: #FFFFFF;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--bahamas-black);
+  background-color: var(--white);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+nav ul {
   list-style: none;
   display: flex; 
   justify-content: center;
   flex-direction: row; 
   gap: 20px; 
- }
+  padding: 1rem;
+  background-color: var(--bahamas-aqua);
+}
 
- nav ul li {
-  background-color: dodgerblue;
-  padding: 5px;
+nav ul li {
+  background-color: var(--bahamas-yellow);
+  padding: 10px 15px;
   border-radius: 5px;
- }
+  transition: background-color 0.3s;
+}
+
+nav ul li:hover {
+  background-color: var(--bahamas-blue);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--bahamas-black);
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(0, 160, 176, 0.7), rgba(0, 160, 176, 0.7)), 
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  background-color: var(--bahamas-yellow);
+  color: var(--bahamas-black);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: var(--white);
+}
+
+/* Highlights section */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.factoid {
+  background-color: var(--bahamas-aqua);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Activity and Restaurant sections */
+.activity, .restaurant {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.activity img, .restaurant img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.activity-text, .restaurant-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid var(--bahamas-aqua);
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.submit-btn {
+  background-color: var(--bahamas-yellow);
+  color: var(--bahamas-black);
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--bahamas-aqua);
+  color: var(--white);
+}
+
+/* Statement page */
+.statement, .citations {
+  margin-bottom: 3rem;
+}
+
+.citations ul {
+  list-style-type: none;
+}
+
+.citations li {
+  margin-bottom: 0.5rem;
+}
+
+.citations a {
+  color: var(--bahamas-blue);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bahamas-aqua);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .activity, .restaurant {
+    flex-direction: column;
+  }
+  
+  .activity img, .restaurant img {
+    width: 100%;
+  }
+}
