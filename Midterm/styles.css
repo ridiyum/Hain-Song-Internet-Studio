@@ -435,6 +435,11 @@ footer {
   font-weight: 400;
 }
 
+/* Changed hero h1 to white */
+.hero h1 {
+  color: #FFFFFF;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   nav ul {
@@ -499,3 +504,4 @@ footer {
     font-size: 1.1rem;
   }
 }
+
