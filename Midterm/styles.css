@@ -127,6 +127,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 .hero p {
@@ -434,11 +435,6 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 400;
-}
-
-/* Changed hero h1 to white */
-.hero h1 {
-  color: #FFFFFF;
 }
 
 /* Responsive design */
