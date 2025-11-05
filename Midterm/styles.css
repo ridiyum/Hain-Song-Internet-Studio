@@ -23,8 +23,24 @@
        
 
  Insert all your glorious CSS styles below! */
-/* Imported Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+/* Google Web Fonts Helper - Self-hosted fonts */
+/* Abel Regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/abel-v18-latin-regular.woff2') format('woff2');
+}
+
+/* Abhaya Libre Bold */
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/abhaya-libre-v18-latin-700.woff2') format('woff2');
+}
 
 /* CSS Variables for Bahamas color palette */
 :root {
@@ -43,15 +59,18 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Abhaya Libre', serif;
   line-height: 1.6;
   color: var(--bahamas-black);
   background-color: var(--white);
+  font-weight: 700;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abel', sans-serif;
   margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 p {
@@ -83,7 +102,9 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   color: var(--bahamas-black);
-  font-weight: bold;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 /* Main content */
@@ -107,8 +128,10 @@ main {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero p {
@@ -130,10 +153,12 @@ main {
   border: none;
   padding: 12px 24px;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .cta:hover {
@@ -159,6 +184,16 @@ main {
   min-width: 200px;
 }
 
+.factoid h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Abel', sans-serif;
+}
+
+.factoid p {
+  font-family: 'Abhaya Libre', serif;
+}
+
 /* Activity and Restaurant sections */
 .activity, .restaurant {
   display: flex;
@@ -181,6 +216,12 @@ main {
   min-width: 300px;
 }
 
+.activity h2, .restaurant h2 {
+  color: var(--bahamas-blue);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
 /* Contact form */
 .contact-form {
   max-width: 600px;
@@ -194,7 +235,9 @@ form {
 
 label {
   margin-top: 1rem;
-  font-weight: bold;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 input, textarea {
@@ -202,7 +245,9 @@ input, textarea {
   margin-top: 5px;
   border: 2px solid var(--bahamas-aqua);
   border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .submit-btn {
@@ -211,11 +256,13 @@ input, textarea {
   border: none;
   padding: 12px;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
   cursor: pointer;
   margin-top: 1rem;
   transition: background-color 0.3s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .submit-btn:hover {
@@ -228,16 +275,28 @@ input, textarea {
   margin-bottom: 3rem;
 }
 
+.statement h2 {
+  color: var(--bahamas-blue);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
 .citations ul {
   list-style-type: none;
 }
 
 .citations li {
   margin-bottom: 0.5rem;
+  font-family: 'Abhaya Libre', serif;
 }
 
 .citations a {
   color: var(--bahamas-blue);
+  text-decoration: none;
+}
+
+.citations a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -251,6 +310,7 @@ footer {
 
 .footer-content p {
   margin-bottom: 0.5rem;
+  font-family: 'Abhaya Libre', serif;
 }
 
 /* Responsive design */
@@ -261,7 +321,7 @@ footer {
   }
   
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   .hero p {
@@ -274,5 +334,18 @@ footer {
   
   .activity img, .restaurant img {
     width: 100%;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta {
+    width: 200px;
+  }
+  
+  .activity h2, .restaurant h2 {
+    font-size: 1.8rem;
   }
 }
