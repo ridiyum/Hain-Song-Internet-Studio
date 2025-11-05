@@ -258,7 +258,7 @@ main {
   display: block;
 }
 
-/* Make activities and dining page titles larger and black */
+/* Made activities and dining page titles larger and black */
 main h1:first-child {
   font-size: 4rem;
   text-align: center;
@@ -410,7 +410,7 @@ input, textarea {
   width: 400px;
   height: 250px;
   object-fit: cover;
-  object-position: center 50%; /* Moved the view higher up in the image */
+  object-position: center 30% !important; /* Overrided positioning of Statement Image */
   border-radius: 10px;
   flex: 1;
 }
