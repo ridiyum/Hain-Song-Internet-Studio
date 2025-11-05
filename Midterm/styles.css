@@ -227,6 +227,40 @@ main {
   font-weight: 700;
 }
 
+/* Page header with centered title and image - FOR CONTACT AND STATEMENT PAGES ONLY */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000000; /* Changed to black */
+}
+
+.header-image {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Make activities and dining page titles larger and black */
+main h1:first-child {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
 /* Contact form */
 .contact-form {
   max-width: 600px;
@@ -310,47 +344,6 @@ input, textarea {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  background-color: #00A0B0;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
-.footer-content p {
-  margin-bottom: 0.5rem;
-  font-family: 'Abel', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 400;
-}
-
-/* Page header with centered title and image */
-.page-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.page-header h1 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #00778B;
-}
-
-.header-image {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin: 0 auto;
-  display: block;
-}
-
 /* Updated contact and statement hero sections */
 .contact-hero, .statement-hero {
   text-align: center;
@@ -425,6 +418,23 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Footer */
+footer {
+  background-color: #00A0B0;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   nav ul {
@@ -470,6 +480,10 @@ footer {
   }
   
   .page-header h1 {
+    font-size: 2.8rem;
+  }
+  
+  main h1:first-child {
     font-size: 2.8rem;
   }
   
