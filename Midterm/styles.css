@@ -227,7 +227,7 @@ main {
   font-weight: 700;
 }
 
-/* Page header with centered title and image - FOR CONTACT AND STATEMENT PAGES ONLY */
+/* Page header with centered title and image*/
 .page-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -344,7 +344,7 @@ input, textarea {
   text-decoration: underline;
 }
 
-/* Updated contact and statement hero sections */
+/* Contact and statement hero sections */
 .contact-hero, .statement-hero {
   text-align: center;
   margin: 3rem 0;
