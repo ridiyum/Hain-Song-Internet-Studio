@@ -403,6 +403,7 @@ input, textarea {
   width: 400px;
   height: 250px;
   object-fit: cover;
+  object-position: center 30%; /* Moved the view higher up in the image */
   border-radius: 10px;
   flex: 1;
 }
