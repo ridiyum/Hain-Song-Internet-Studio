@@ -327,6 +327,48 @@ footer {
   font-weight: 400;
 }
 
+/* Page header with centered title and image */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #00778B;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Updated contact and statement hero sections */
+.contact-hero, .statement-hero {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.contact-intro h2, .statement-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00778B;
+}
+
+.contact-intro p, .statement-intro p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Contact page hero */
 .contact-hero {
   display: flex;
@@ -425,5 +467,21 @@ footer {
   
   .contact-hero img, .statement-hero img {
     width: 100%;
+  }
+  
+  .page-header h1 {
+    font-size: 2.8rem;
+  }
+  
+  .header-image {
+    height: 250px;
+  }
+  
+  .contact-intro h2, .statement-intro h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-intro p, .statement-intro p {
+    font-size: 1.1rem;
   }
 }
