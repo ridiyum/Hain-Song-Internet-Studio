@@ -327,6 +327,62 @@ footer {
   font-weight: 400;
 }
 
+/* Contact page hero */
+.contact-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.contact-hero img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.contact-intro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-intro h2 {
+  color: #00778B;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Design statement hero */
+.statement-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.statement-hero img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.statement-intro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.statement-intro h2 {
+  color: #00778B;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   nav ul {
@@ -361,5 +417,13 @@ footer {
   
   .activity h2, .restaurant h2 {
     font-size: 1.8rem;
+  }
+  
+  .contact-hero, .statement-hero {
+    flex-direction: column;
+  }
+  
+  .contact-hero img, .statement-hero img {
+    width: 100%;
   }
 }
