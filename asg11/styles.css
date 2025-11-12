@@ -56,7 +56,7 @@ body {
   padding: 0;
   color: #2c3e50;
   /* Background image covering entire page */
-  background-image: url('images/h-co--odUkx8C2gg-unsplash.jpg');
+  background-image: url('images/memphis-mini.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -90,7 +90,7 @@ h1,
   font-weight: 700;
   margin-top: 0;
   font-size: 3.05em;
-  color: #fff;
+  color: #ffcb1f;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
