@@ -24,7 +24,6 @@
 
  Insert all your glorious CSS styles below! */
 
-/* FONT IMPORTS - Alkatra and Actor */
 
 /* alkatra-regular - latin */
 @font-face {
@@ -240,4 +239,101 @@ small,
   line-height: 1.6;
   flex-grow: 1;
   color: #334155; /* Slate gray for readability */
+}
+
+/* CHARACTER-THEMED CARD COLORS */
+
+/* Neo - Matrix green theme */
+.team-member:nth-child(1) {
+  border-color: #10b981; /* Matrix green */
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.98) 0%, rgba(209, 250, 229, 0.98) 100%);
+}
+
+.team-member:nth-child(1):hover {
+  border-color: #059669; /* Darker matrix green */
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+}
+
+.team-member:nth-child(1) h2 {
+  color: #047857; /* Deep green */
+}
+
+.team-member:nth-child(1) img {
+  border-color: #10b981;
+}
+
+/* Wonder Woman - Red, gold, and blue theme */
+.team-member:nth-child(2) {
+  border-color: #dc2626; /* Wonder Woman red */
+  background: linear-gradient(135deg, rgba(254, 242, 242, 0.98) 0%, rgba(254, 226, 226, 0.98) 100%);
+}
+
+.team-member:nth-child(2):hover {
+  border-color: #fbbf24; /* Gold accent */
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.4);
+}
+
+.team-member:nth-child(2) h2 {
+  color: #991b1b; /* Deep red */
+}
+
+.team-member:nth-child(2) img {
+  border-color: #dc2626;
+}
+
+/* Spider-Man - Red and blue theme */
+.team-member:nth-child(3) {
+  border-color: #ef4444; /* Spider-Man red */
+  background: linear-gradient(135deg, rgba(254, 242, 242, 0.98) 0%, rgba(239, 246, 255, 0.98) 100%);
+}
+
+.team-member:nth-child(3):hover {
+  border-color: #3b82f6; /* Spider-Man blue */
+  box-shadow: 0 12px 30px rgba(239, 68, 68, 0.4);
+}
+
+.team-member:nth-child(3) h2 {
+  color: #b91c1c; /* Deep red */
+}
+
+.team-member:nth-child(3) img {
+  border-color: #ef4444;
+}
+
+/* Legolas - Elvish green and gold theme */
+.team-member:nth-child(4) {
+  border-color: #84cc16; /* Forest green */
+  background: linear-gradient(135deg, rgba(247, 254, 231, 0.98) 0%, rgba(236, 252, 203, 0.98) 100%);
+}
+
+.team-member:nth-child(4):hover {
+  border-color: #eab308; /* Elvish gold */
+  box-shadow: 0 12px 30px rgba(132, 204, 22, 0.4);
+}
+
+.team-member:nth-child(4) h2 {
+  color: #4d7c0f; /* Deep forest green */
+}
+
+.team-member:nth-child(4) img {
+  border-color: #84cc16;
+}
+
+/* Sonic - Bright blue theme */
+.team-member:nth-child(5) {
+  border-color: #3b82f6; /* Sonic blue */
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.98) 0%, rgba(219, 234, 254, 0.98) 100%);
+}
+
+.team-member:nth-child(5):hover {
+  border-color: #ef4444; /* Sonic's shoes red */
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
+}
+
+.team-member:nth-child(5) h2 {
+  color: #1e40af; /* Deep blue */
+}
+
+.team-member:nth-child(5) img {
+  border-color: #3b82f6;
 }
