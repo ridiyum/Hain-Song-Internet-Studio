@@ -32,7 +32,7 @@
   font-family: 'Aboreto';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/aboreto-v2-latin-regular.woff2') format('woff2');
+  src: url('fonts/aboreto-v2-latin-regular.woff2') format('woff2');
 }
 
 /* akshar-regular - latin */
@@ -41,7 +41,7 @@
   font-family: 'Akshar';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/akshar-v17-latin-regular.woff2') format('woff2');
+  src: url('fonts/akshar-v17-latin-regular.woff2') format('woff2');
 }
 
 /* RESET & BASE STYLES */
