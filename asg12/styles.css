@@ -23,3 +23,142 @@
        
 
  Insert all your glorious CSS styles below! */
+
+/* FONTS */
+
+/* aboreto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Aboreto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/aboreto-v2-latin-regular.woff2') format('woff2');
+}
+
+/* akshar-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/akshar-v17-latin-regular.woff2') format('woff2');
+}
+
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-image: url('images/Sprinkle.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* HEADER STYLES */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5em 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Aboreto', serif;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* INTRO SECTION */
+.intro {
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.intro p {
+    font-size: 1.125em;
+    line-height: 1.8;
+    color: #34495e;
+    text-align: justify;
+}
+
+/* MOVIE CARD HEADER STYLES */
+h2 {
+    font-family: 'Aboreto', serif;
+    font-size: 1.5em;
+    color: #667eea;
+    margin: 0.75em 0 0.5em 0;
+    font-weight: 400;
+}
+
+/* GALLERY GRID LAYOUT */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* MOVIE CARD STYLES */
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card p {
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: #555;
+    margin-top: 0.5em;
+    flex-grow: 1;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: rgba(44, 62, 80, 0.95);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 3em;
+}
+
+footer p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
