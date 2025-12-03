@@ -1,56 +1,201 @@
-/* Some selectors to get you started */
+/* ========================================
+   FONT FACE DECLARATIONS
+   ======================================== */
+
+/* afacad-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Afacad';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/afacad-v3-latin-600.woff2') format('woff2');
+}
+
+/* advent-pro-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/advent-pro-v33-latin-regular.woff2') format('woff2');
+}
+
+/* ========================================
+   CSS RESET AND BASE STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   BODY STYLING WITH SVG BACKGROUND
+   ======================================== */
 
 body {
-
-
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1040%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='35.725' cx='61.13' cy='134.01' fill='url(%26quot%3b%23SvgjsLinearGradient1041%26quot%3b)'%3e%3c/circle%3e%3ccircle r='42.935' cx='1431.84' cy='402.2' fill='url(%26quot%3b%23SvgjsLinearGradient1042%26quot%3b)'%3e%3c/circle%3e%3ccircle r='43.755' cx='1418.13' cy='523.93' fill='url(%26quot%3b%23SvgjsLinearGradient1043%26quot%3b)'%3e%3c/circle%3e%3ccircle r='53.115' cx='368.43' cy='38.63' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='26.445' cx='1241.79' cy='498.82' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='21.73' cx='1232.62' cy='157.39' fill='url(%26quot%3b%23SvgjsLinearGradient1044%26quot%3b)'%3e%3c/circle%3e%3ccircle r='45.715' cx='249.68' cy='546.03' fill='url(%26quot%3b%23SvgjsLinearGradient1045%26quot%3b)'%3e%3c/circle%3e%3ccircle r='48.02' cx='466.69' cy='554.77' fill='url(%26quot%3b%23SvgjsLinearGradient1046%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1040'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='-10.32' y1='134.01' x2='132.58' y2='134.01' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1041'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1345.9699999999998' y1='402.2' x2='1517.7099999999998' y2='402.2' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1042'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1330.6200000000001' y1='523.93' x2='1505.64' y2='523.93' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1189.1599999999999' y1='157.39' x2='1276.08' y2='157.39' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1044'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='158.25' y1='546.03' x2='341.11' y2='546.03' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1045'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='370.65' y1='554.77' x2='562.73' y2='554.77' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
 }
 
+/* ========================================
+   MAIN CONTAINER
+   ======================================== */
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   HEADER STYLING - H1
+   ======================================== */
 
 h1 {
-
-
+    font-family: 'Afacad', sans-serif;
+    font-size: 3em;
+    color: #32325d;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
+/* ========================================
+   SUBHEADER STYLING - H2
+   ======================================== */
 
 h2 {
-
-	
+    font-family: 'Afacad', sans-serif;
+    font-size: 2em;
+    color: #43468b;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #7e6286;
+    padding-bottom: 10px;
 }
+
+/* ========================================
+   JOB TITLE HEADER - H3
+   ======================================== */
 
 h3 {
-
-	
+    font-family: 'Afacad', sans-serif;
+    font-size: 1.5em;
+    color: #43468b;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
+/* ========================================
+   INTRODUCTION SECTION
+   ======================================== */
+
+.intro {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 5px solid #43468b;
+}
+
+/* ========================================
+   PARAGRAPH STYLING
+   ======================================== */
 
 p {
-
-
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
 }
 
-a {
+/* ========================================
+   JOB LISTINGS GRID LAYOUT
+   ======================================== */
 
-
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
 
-ol {
+/* ========================================
+   INDIVIDUAL JOB CARD
+   ======================================== */
 
-
+.job-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eaf0 100%);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-ul {
+/* ========================================
+   JOB CARD HOVER EFFECT
+   ======================================== */
 
-
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-li {
+/* ========================================
+   COMPANY LOGO CONTAINER
+   ======================================== */
 
-	
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
+/* ========================================
+   COMPANY LOGO IMAGE
+   ======================================== */
 
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+}
 
+/* ========================================
+   JOB DESCRIPTION
+   ======================================== */
 
+.job-description {
+    flex-grow: 1;
+}
 
+/* ========================================
+   FOOTER
+   ======================================== */
 
-
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #43468b;
+    color: #777;
+    font-size: 0.9em;
+}
