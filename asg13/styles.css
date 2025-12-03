@@ -167,3 +167,17 @@ footer {
     color: #777;
     font-size: 0.9em;
 }
+
+
+/*JOB TITLE LINKS*/
+
+h3 a {
+    color: #43468b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+h3 a:hover {
+    color: #7e6286;
+    text-decoration: underline;
+}
